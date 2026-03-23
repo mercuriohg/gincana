@@ -1,0 +1,59 @@
+/* Seletor com escape para o caractere '=' no ID */
+#card\=admin {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 450px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+#card\=admin form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#card\=admin label {
+    color: #1E4FA1;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Estilização do campo de arquivo */
+#card\=admin input[type="file"] {
+    padding: 15px;
+    border: 2px dashed #1E4FA1;
+    border-radius: 8px;
+    background-color: #f9fbff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#card\=admin input[type="file"]:hover {
+    background-color: #eef4ff;
+    border-style: solid;
+}
+
+/* Estilização do botão Enviar */
+#card\=admin button {
+    background-color: #1E4FA1;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#card\=admin button:hover {
+    background-color: #163a75;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 79, 161, 0.3);
+}

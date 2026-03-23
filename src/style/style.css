@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: #0D1B2A;
+    --primary-color2: #1E4FA1;
+    --primary-color3: #2F6BFF;
+    --destaque:#FFC300;
+    --destaque2:#FFD966;
+    --secondary-color:#D35400;
+    --secondary-color2:#C62828;
+}
+body,html{
+    font-family: Arial, sans-serif;
+    color: white;
+display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+}
+/*HEADER*/
+#header-main{
+    background-color: var(--primary-color2);
+    color: white;
+    padding: 0 40px 40px 40px;
+    margin: 0 40px 0 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 0px 20px 20px;
+    position:sticky;
+    top:0;
+}
+#nav-header{
+    display: flex;
+    align-items: center;
+}
+#nav-header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#nav-header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    background-image: url(../src/assets/img/image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+/*MAIN*/
+#main-content{
+    color: black;
+    padding: 50px;
+    gap: 20px;
+    flex: 1;
+}
+h2{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*footer*/
+#main-footer{
+    margin: 0;
+    background-color: var(--primary-color2);
+    color: white;
+    padding: 20px 40px;
+    margin: 40px;
+    border-radius: 20px;
+    
+
+}
+#main-footer .contact{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#main-footer a{
+    color: var(--destaque);
+    text-decoration: none;
+}
+#content-footer{
+    display: flex;
+    justify-content: space-around;
+}
+h5{
+    color:black;
+    text-align:center;
+    padding: 0 20px 20px 20px;
+}
+/*card gincana*/
+.card-gincana {
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-left: 5px solid #1E4FA1; /* Barra lateral com a cor oficial */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+    padding: 20px;
+    width: fit-content;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para flutuar */
+    transition: transform 0.3s ease; /* Efeito de movimento */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+/* Efeito ao passar o mouse */
+.card-gincana:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-gincana h4 {
+    color: #1E4FA1; /* Título na cor oficial */
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-gincana p {
+    color: #555; /* Texto mais suave para a data */
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+#gincana{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="../style/admin.css"/>
+  </head>
+  <body>
+    <div id="card=admin">
+      <form
+        action="/seu-endpoint-de-upload"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label for="documento">Selecione o arquivo PDF:</label>
+
+        <input
+          type="file"
+          id="documento"
+          name="arquivo_pdf"
+          accept="application/pdf"
+          required
+        />
+
+        <button type="submit">Enviar PDF</button>
+      </form>
+    </div>
+  </body>
+</html>
