@@ -131,7 +131,90 @@ h5{
     font-weight: 500;
     font-size: 0.95rem;
 }
+.card-gincana a{
+    text-decoration: none;
+}
 #gincana{
     display: flex;
     justify-content: center;
+}
+
+/*Tarefas*/
+/* Container Principal */
+#tarefas {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo do Filtro (Select) */
+#tarefas label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E4FA1;
+    margin-bottom: 10px;
+}
+
+#categ {
+    padding: 10px 15px;
+    border: 2px solid #1E4FA1;
+    border-radius: 8px;
+    background-color: white;
+    color: #1E4FA1;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+/* Grid de Tarefas */
+#tarefas-gincana {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo Geral do Card de Tarefa */
+#tarefas-gincana > div {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, border 0.3s ease;
+    padding: 15px;
+    text-align: center;
+    border-top: 6px solid #ccc; /* Cor padrão */
+}
+
+#tarefas-gincana > div:hover {
+    transform: translateY(-5px);
+}
+
+/* Cores por Categoria */
+.pensantes { border-color: #4A90E2 !important; } /* Azul claro */
+.esportiva { border-color: #E24A4A !important; } /* Vermelho esportivo */
+.artistica { border-color: #A34AE2 !important; } /* Roxo artístico */
+
+/* Estilo da Imagem e Textos */
+#tarefas-gincana img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Placeholder caso não tenha imagem */
+    margin-bottom: 15px;
+}
+
+#tarefas-gincana p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+#tarefas-gincana p:nth-of-type(2) {
+    color: #666;
+    font-size: 0.9rem;
 }
