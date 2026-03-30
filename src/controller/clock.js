@@ -2,7 +2,7 @@ const hora = document.getElementById('hora');
 const minuto = document.getElementById('minuto');
 const segundo = document.getElementById('segundo');
 const corpo = document.getElementById('corpo');
-const principal = document.getElementById('container-main');
+const principal = document.getElementById('container-clock');
 
 function atualizarRelogio() {
     const dataAtual = new Date();
