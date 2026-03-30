@@ -224,7 +224,7 @@ h5{
     align-items: center;
     justify-content: center;
     gap: 6px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color2);    
     padding: 8px 14px;
     border-radius: 10px;
 }
