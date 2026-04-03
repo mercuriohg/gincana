@@ -218,3 +218,32 @@ h5{
     color: #666;
     font-size: 0.9rem;
 }
+#nav-header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+#nav-header a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Linha escondida */
+#nav-header a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--destaque); /* pode trocar pela cor do teu projeto */
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+#nav-header a:hover::after {
+    width: 100%;
+}
