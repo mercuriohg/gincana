@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LDM - Organizadora</title>
-    <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="src/style/style.css">
     <link rel="shortcut icon" href="src/assets/img/malal-logo.png" type="image/x-icon">
 </head>
 <body>
@@ -19,6 +19,13 @@
                     <li><a href="#">Downloads</a></li>
                 </ul>
             </nav>
+        <div id="container-clock">
+        <div id="hora" class="style-div"> 0 </div><p>:</p>
+
+        <div id="minuto" class="style-div"> 0</div><p>:</p>
+
+        <div id="segundo" class="style-div"> 0 </div>
+    </div>
     </header>
     <main id="main-content">
         <h2>
@@ -53,5 +60,7 @@
         </div>
     </footer>
     <h5>Todos os direitos reservados - @Grêmio Estudantil - IFRS Campus Rolante</h5>
+   <script src="src/controller/clock.js"></script>
+
 </body>
 </html>
