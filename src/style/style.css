@@ -237,7 +237,7 @@ h5{
     position: absolute;
     width: 0%;
     height: 2px;
-    background: var(--destaque); /* pode trocar pela cor do teu projeto */
+    background: var(--destaque);
     left: 0;
     bottom: -5px;
     transition: 0.3s ease;
